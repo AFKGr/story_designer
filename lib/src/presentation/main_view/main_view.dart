@@ -457,6 +457,8 @@ class _MainViewState extends State<MainView> {
                             duration: const Duration(milliseconds: 300),
                             curve: Curves.easeIn);
                       },
+                      imageBackgroundColor: Colors.black,
+                      childAspectRatio: 0.56,
                       appBarLeadingWidget: Padding(
                         padding: const EdgeInsets.only(bottom: 15, right: 15),
                         child: Align(
@@ -475,14 +477,12 @@ class _MainViewState extends State<MainView> {
                                   borderRadius: BorderRadius.circular(10),
                                   border: Border.all(
                                     color: Colors.white,
-                                    width: 1.2,
+                                    width: 0,
                                   )),
-                              child: const Text(
-                                'Cancel',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w400),
+                              child: const Icon(
+                                Icons.arrow_upward,
+                                color: Colors.transparent,
+                                size: 20,
                               ),
                             ),
                           ),

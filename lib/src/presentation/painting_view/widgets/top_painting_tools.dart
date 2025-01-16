@@ -169,7 +169,7 @@ class _TopPaintingToolsState extends State<TopPaintingTools> {
                     paintingNotifier.resetDefaults();
                   },
                   child: Padding(
-                    padding: const EdgeInsets.only(right: 10, top: 10),
+                    padding: const EdgeInsets.only(right: 0, top: 10),
                     child: Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 6, horizontal: 12),
@@ -178,7 +178,7 @@ class _TopPaintingToolsState extends State<TopPaintingTools> {
                           border: Border.all(color: Colors.white, width: 1.5),
                           borderRadius: BorderRadius.circular(15)),
                       child: const Text(
-                        'Done',
+                        'OK',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 15,
